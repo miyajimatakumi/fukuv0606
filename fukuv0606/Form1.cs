@@ -2,7 +2,9 @@ namespace fukuv0606
 {
     public partial class Form1 : Form
     {
+        
         int vx = -4;
+        
         public Form1()
         {
             InitializeComponent();
@@ -14,10 +16,12 @@ namespace fukuv0606
             if (label1.Left < 0)
             {
                 vx = Math.Abs(vx);
+                vx += 10;
             }
             else if (label1.Right > ClientSize.Width)
             {
                 vx = -Math.Abs(vx);
+                vx += -11;
             }
         }
 
